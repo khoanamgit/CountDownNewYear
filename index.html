@@ -10,15 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Count Down 2023</title>
   </head>
   <body>
-    <audio id="my_audio" src="./assets/music/khucgiaomua.mp3" loop="loop"></audio>
+    <audio
+      id="my_audio"
+      src="./assets/music/khucgiaomua.mp3"
+      loop="loop"
+    ></audio>
+    <div class="play-music">
+      <i class="icon fa-solid fa-music"></i>
+  
+    </div>
     <div class="content-wrapper">
-      <p class="header">Countdown to new year</p>
+      <p class="header">Countdown to Lunar New Year</p>
       <h1 class="year">0000</h1>
       <div class="timer">
         <div class="timer-box">
@@ -53,9 +68,7 @@
     <div class="fireworks-container"></div>
   </body>
   <script>
-    window.onload = function () {
-      document.getElementById("my_audio").play();
-    };
+   
   </script>
   <script src="./js/firework.js"></script>
   <script src="./js/index.js"></script>

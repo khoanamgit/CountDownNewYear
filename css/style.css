@@ -84,6 +84,22 @@ body {
     background-color: var(--green-light);
 }
 
+.play-music{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.play-music .icon{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.play-music .icon:hover{
+    opacity: 1;
+    color: var(--green-color);
+}
 
 @media only screen and (max-width: 1200px) {
     html {
