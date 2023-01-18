@@ -1,0 +1,98 @@
+:root {
+    --txt-color: #fff;
+    --timer-box-bg: #1c2451;
+    --timer-box-txt-bg: #085391;
+    --green-color: #e03131;
+    --green-light: #ff8787;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: var(--txt-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.fireworks-container{
+    background-image: url('../assets/sgbg.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.content-wrapper{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--green-color);
+}
+
+.year{
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer > * ~ * {
+    margin-left: 4rem;
+}
+
+.timer-box{
+    background-color: var(--green-color);
+}
+
+.timer-box__count{
+    --size:5rem;
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    place-items: center;
+}
+
+.timer-box__text{
+    /* font-size: 0.5rem; */
+    display: grid;
+    place-items: center;
+    background-color: var(--green-light);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 60%;
+    }
+}
