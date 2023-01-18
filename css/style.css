@@ -101,9 +101,41 @@ body {
     color: var(--green-color);
 }
 
+.year-test{
+    position: relative;
+}
+
+.img-cat{
+    position: absolute;
+    top: 67px;
+    /* left: 0; */
+    right: 233px;
+    z-index: 10000;
+}
+
+.img-cat img{
+    width: 116px;
+    height: 143px;
+    border-radius: 50px;
+}
+
 @media only screen and (max-width: 1200px) {
     html {
         font-size: 80%;
+    }
+
+    
+    .img-cat{
+        position: absolute;
+        top: 49px;
+        right: 182px;
+        z-index: 10000;
+    }
+    
+    .img-cat img{
+        width: 98px;
+        height: 128px;
+        border-radius: 50px;
     }
 }
 
@@ -111,4 +143,18 @@ body {
     html {
         font-size: 60%;
     }
+
+    .img-cat{
+        position: absolute;
+        top: 35px;
+        right: 137px;
+        z-index: 10000;
+    }
+
+    .img-cat img{
+        width: 75px;
+        height: 96px;
+        border-radius: 50px;
+    }
+
 }
